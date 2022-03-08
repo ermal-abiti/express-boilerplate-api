@@ -11,7 +11,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-    res.status(200).json({ page: 'About' });
+    res.status(200).json({ page: 'About ErmalAbiti' });
+});
+
+app.get('/newcommit', (req, res) => {
+    res.status(200).json({ page: 'NewCommit' });
 });
 
 app.get('*', (req, res) => {
