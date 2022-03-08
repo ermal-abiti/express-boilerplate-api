@@ -1,13 +1,15 @@
 import express from "express";
 import http from "http";
+import cors from "cors";
 
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 
 app.get('/', (req, res) => {
-    res.status(200).json({ page: 'Homepage' });
+    res.status(200).json({ page: 'Homepage , cors fixed' });
 });
 
 app.get('/about', (req, res) => {

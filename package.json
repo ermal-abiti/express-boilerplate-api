@@ -8,7 +8,7 @@
     "dev": "nodemon index.js",
     "build": "node index.js",
     "start": "vercel dev",
-    "deploy" : "vercel deploy --prod"
+    "deploy": "vercel deploy --prod"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/ermal-abiti/express-boilerplate-api#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.3",
     "nodemon": "^2.0.15",
     "prettier": "^2.5.1"
