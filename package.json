@@ -5,8 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js",
-    "build": "node index.js"
+    "dev": "nodemon index.js",
+    "build": "node index.js",
+    "start": "vercel dev",
+    "deploy-vercel" : "vercel deploy --prod"
   },
   "repository": {
     "type": "git",
